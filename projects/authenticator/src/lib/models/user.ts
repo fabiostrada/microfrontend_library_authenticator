@@ -1,5 +1,6 @@
-import { Base, Role, RoleType } from ".";
-
+import { Base } from "./base";
+import { Role } from "./role";
+import { RoleType } from "./role.type";
 export class User extends Base {
 
     public fullname: string;

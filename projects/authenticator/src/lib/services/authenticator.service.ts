@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, switchMap } from 'rxjs';
-import { StateService } from '.';
+import { StateService } from './state.service';
 import { StateItem } from '../config/state.item';
 import { User } from '../models/user';
 

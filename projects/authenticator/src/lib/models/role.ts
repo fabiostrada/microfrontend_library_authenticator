@@ -1,4 +1,4 @@
-import { Base } from ".";
+import { Base } from "./base";
 import { isNullOrEmpty } from "../herlpers/array.helpers";
 import { RoleType } from "./role.type";
 
