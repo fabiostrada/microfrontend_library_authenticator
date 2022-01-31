@@ -16,14 +16,14 @@ export class AuthenticatorService {
       return of(!!currentUser ? currentUser : undefined);
   }
 
-  public setCurrentUser(user: User): Observable<void> {
+  public setCurrentUser(user: User): Observable<boolean> {
       this.stateService.setItem(user, StateItem.USER);
-      return of();
+      return of(true);
   }
 
-  public logout(): Observable<void> {
+  public logout(): Observable<boolean> {
       this.stateService.removeItem(StateItem.USER);
-      return of();
+      return of(true);
   }
 
   public isAdmin(): Observable<boolean> {
