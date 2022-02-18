@@ -5,6 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class StateService {
 
+  private property1!: string;
+
+  public getProperty1(): string {
+    return this.property1;
+  }
+
+  public setProperty1(value: string): void {
+    this.property1 = value;
+  }
+
   public setItem<T>(value: T, type: string): void {
     localStorage.removeItem(type);
     localStorage.setItem(type, JSON.stringify(value));
