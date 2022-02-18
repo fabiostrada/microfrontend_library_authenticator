@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { StateService } from './services/state.service';
 
 @NgModule({
   declarations: [    
@@ -6,6 +7,9 @@ import { NgModule } from '@angular/core';
   imports: [
   ],
   exports: [    
+  ],
+  providers:[
+    StateService
   ]
 })
 export class AuthenticatorModule { }

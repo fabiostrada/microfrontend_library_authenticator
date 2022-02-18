@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
+import { AuthenticatorModule } from '..';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class StateService {
 
   private property1!: string;
