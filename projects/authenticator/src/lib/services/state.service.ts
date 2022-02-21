@@ -1,7 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional, SkipSelf } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  deps: [[new Optional(), new SkipSelf(), StateService]],
+  providedIn: 'root',
+  useFactory: (instance: StateService | null) => instance || new StateService(),
 })
 export class StateService {
 
